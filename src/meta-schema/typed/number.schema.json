@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/schema/number#",
+  "title": "Number",
+  "allOf": [
+    { "$ref": "http://example.com/schema/schema-object#" },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "number"
+        },
+        "enum": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2
+        },
+        "const": {
+          "type": "number"
+        }
+      },
+      "dependencies": {
+        "minimum": {
+          "properties": {
+            "exclusiveMinimum": false
+          }
+        },
+        "exclusiveMinimum": {
+          "properties": {
+            "minimum": false
+          }
+        },
+        "maximum": {
+          "properties": {
+            "exclusiveMaximum": false
+          }
+        },
+        "exclusiveMaximum": {
+          "properties": {
+            "maximum": false
+          }
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    { "$ref": "http://example.com/schema/no-string-keywords#" },
+    { "$ref": "http://example.com/schema/no-object-keywords#" },
+    { "$ref": "http://example.com/schema/no-array-keywords#" }
+  ]
+}

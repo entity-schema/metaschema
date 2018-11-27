@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://example.com/schema/combining#",
+    "title": "Combining",
+    "anyOf": [
+        { "$ref": "http://example.com/schema/all-of#" },
+        { "$ref": "http://example.com/schema/any-of#" },
+        { "$ref": "http://example.com/schema/one-of#" },
+        { "$ref": "http://example.com/schema/not#" }
+    ]
+}

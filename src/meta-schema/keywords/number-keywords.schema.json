@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/schema/number-keywords#",
+  "title": "Has Number Keywords",
+  "allOf": [
+    {
+      "$ref": "http://example.com/schema/schema-object#"
+    }
+  ],
+  "anyOf": [
+    {
+      "required": [ "multipleOf" ]
+    },
+    {
+      "required": [ "minimum" ]
+    },
+    {
+      "required": [ "maximum" ]
+    },
+    {
+      "required": [ "exclusiveMinimum" ]
+    },
+    {
+      "required": [ "exclusiveMaximum" ]
+    }
+  ]
+}

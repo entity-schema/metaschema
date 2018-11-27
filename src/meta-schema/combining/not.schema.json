@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/schema/not#",
+  "title": "Not",
+  "allOf": [
+    { "$ref": "http://example.com/schema/schema-object#" }
+  ],
+  "required": [ "not" ]
+}

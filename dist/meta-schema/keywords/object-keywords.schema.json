@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://example.com/schema/object-keywords#",
+    "title": "Has Object Keywords",
+    "allOf": [
+        {
+            "$ref": "http://example.com/schema/schema-object#"
+        }
+    ],
+    "anyOf": [
+        {
+            "required": ["properties"]
+        },
+        {
+            "required": ["additionalProperties"]
+        },
+        {
+            "required": ["required"]
+        },
+        {
+            "required": ["propertyNames"]
+        },
+        {
+            "required": ["minProperties"]
+        },
+        {
+            "required": ["maxProperties"]
+        },
+        {
+            "required": ["dependencies"]
+        },
+        {
+            "required": ["patternProperties"]
+        }
+    ]
+}

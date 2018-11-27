@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/schema/string-array#",
+  "title": "String Set Array",
+  "allOf": [
+    {
+      "$ref": "http://example.com/schema/array-of#"
+    },
+    {
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true,
+      "default": []
+    }
+  ]
+}

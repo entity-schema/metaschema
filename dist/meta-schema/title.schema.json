@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://example.com/schema/title#",
+    "title": "Title",
+    "allOf": [
+        { "type": "object" },
+        { "$ref": "http://json-schema.org/draft-06/schema#" },
+        {
+            "properties": {
+                "title": {
+                    "minLength": 1
+                }
+            }
+        }
+    ],
+    "required": ["title"]
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://example.com/schema/typed#",
+    "title": "Typed",
+    "anyOf": [
+        { "$ref": "http://example.com/schema/string#" },
+        { "$ref": "http://example.com/schema/number#" },
+        { "$ref": "http://example.com/schema/integer#" },
+        { "$ref": "http://example.com/schema/object#" },
+        { "$ref": "http://example.com/schema/array#" },
+        { "$ref": "http://example.com/schema/boolean#" },
+        { "$ref": "http://example.com/schema/null#" }
+    ]
+}

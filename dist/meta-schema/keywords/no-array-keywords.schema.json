@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://example.com/schema/no-array-keywords#",
+    "title": "No Array Keywords",
+    "allOf": [
+        {
+            "$ref": "http://example.com/schema/schema-object#"
+        },
+        {
+            "properties": {
+                "items": false,
+                "contains": false,
+                "additionalItems": false,
+                "minItems": false,
+                "maxItems": false,
+                "uniqueItems": false
+            }
+        }
+    ]
+}

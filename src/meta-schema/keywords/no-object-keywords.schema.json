@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/schema/no-object-keywords#",
+  "title": "No Object Keywords",
+  "allOf": [
+    {
+      "$ref": "http://example.com/schema/schema-object#"
+    },
+    {
+      "properties": {
+        "properties": false,
+        "additionalProperties": false,
+        "required": false,
+        "propertyNames": false,
+        "minProperties": false,
+        "maxProperties": false,
+        "dependencies": false,
+        "patternProperties": false
+      }
+    }
+  ]
+}

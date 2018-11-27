@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://example.com/schema/object#",
+    "title": "Object",
+    "allOf": [
+        { "$ref": "http://example.com/schema/schema-object#" },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "const": "object"
+                },
+                "enum": {
+                    "type": "array",
+                    "items": {
+                        "type": "object"
+                    },
+                    "minItems": 2
+                },
+                "const": {
+                    "type": "object"
+                },
+                "required": {
+                    "minItems": 1
+                }
+            },
+            "required": ["type"]
+        },
+        { "$ref": "http://example.com/schema/no-string-keywords#" },
+        { "$ref": "http://example.com/schema/no-number-keywords#" },
+        { "$ref": "http://example.com/schema/no-array-keywords#" }
+    ]
+}

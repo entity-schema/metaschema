@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/schema/string-keywords#",
+  "title": "Has String Keywords",
+  "allOf": [
+    {
+      "$ref": "http://example.com/schema/schema-object#"
+    }
+  ],
+  "anyOf": [
+    {
+      "required": [ "minLength" ]
+    },
+    {
+      "required": [ "maxLength" ]
+    },
+    {
+      "required": [ "pattern" ]
+    },
+    {
+      "required": [ "format" ]
+    }
+  ]
+}

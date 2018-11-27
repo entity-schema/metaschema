@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://example.com/schema/simple-types#",
+    "title": "Simple Types",
+    "allOf": [
+        {
+            "$ref": "http://example.com/schema/string#"
+        },
+        {
+            "enum": [
+                "array",
+                "boolean",
+                "integer",
+                "null",
+                "number",
+                "object",
+                "string"
+            ]
+        }
+    ]
+}

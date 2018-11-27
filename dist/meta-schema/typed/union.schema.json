@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://example.com/schema/union#",
+    "title": "Union",
+    "allOf": [
+        { "$ref": "http://example.com/schema/schema-object#" },
+        {
+            "properties": {
+                "type": {
+                    "allOf": [
+                        {
+                            "$ref": "http://example.com/schema/array-of#"
+                        },
+                        {
+                            "items": { "$ref": "http://example.com/schema/simple-types#" }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

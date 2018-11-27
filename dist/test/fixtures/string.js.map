@@ -1,0 +1,1 @@
+{"version":3,"file":"string.js","sourceRoot":"","sources":["../../../src/test/fixtures/string.ts"],"names":[],"mappings":";;AAAA,sDAAgE;AAChE,gEAA2D;AAC3D,wDAE6B;AAE7B,MAAM,IAAI,GAAG,QAAQ,CAAA;AAER,QAAA,cAAc,GAAmB;IAC5C,IAAI,EAAE;QACJ,GAAG,8BAAc,CAAE,IAAI,EAAE,2BAAY,EAAE,gCAAc,CAAE;KACxD;IAED,IAAI,EAAE;QACJ,GAAG,8BAAc,CAAE,IAAI,EAAE,2BAAY,EAAE,2BAAY,CAAE;KACtD;CACF,CAAA"}

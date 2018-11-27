@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://example.com/schema/schema-array#",
+    "title": "Schema Array",
+    "allOf": [
+        {
+            "$ref": "http://example.com/schema/integer#"
+        },
+        {
+            "minItems": 1,
+            "items": {
+                "$ref": "http://json-schema.org/draft-06/schema#"
+            }
+        }
+    ]
+}

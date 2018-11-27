@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/schema/non-negative-integer#",
+  "title": "Non-negative Integer",
+  "allOf": [
+    {
+      "$ref": "http://example.com/schema/integer#"
+    },
+    {
+      "minimum": 0
+    }
+  ]
+}

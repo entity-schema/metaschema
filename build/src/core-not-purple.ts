@@ -1,0 +1,43 @@
+import { PurpleCore } from "./core-purple";
+import { SimpleTypes } from "./core-shared";
+
+export interface CoreObject {
+  $id?: string;
+  $ref?: string;
+  $schema?: string;
+  additionalItems?: boolean | CoreObject;
+  additionalProperties?: boolean | CoreObject;
+  allOf?: Array<boolean | CoreObject>;
+  anyOf?: Array<boolean | CoreObject>;
+  const?: any;
+  contains?: boolean | CoreObject;
+  default?: any;
+  definitions?: { [ key: string ]: boolean | CoreObject };
+  dependencies?: { [ key: string ]: string[] | boolean | CoreObject };
+  description?: string;
+  enum?: any[];
+  examples?: any[];
+  exclusiveMaximum?: number;
+  exclusiveMinimum?: number;
+  format?: string;
+  items?: Array<boolean | CoreObject> | boolean | CoreObject;
+  maximum?: number;
+  maxItems?: number;
+  maxLength?: number;
+  maxProperties?: number;
+  minimum?: number;
+  minItems?: number;
+  minLength?: number;
+  minProperties?: number;
+  multipleOf?: number;
+  not?: boolean | CoreObject;
+  oneOf?: Array<boolean | CoreObject>;
+  pattern?: string;
+  patternProperties?: { [ key: string ]: boolean | CoreObject };
+  properties?: { [ key: string ]: boolean | CoreObject };
+  propertyNames?: boolean | CoreObject;
+  required?: string[];
+  title?: string;
+  type?: SimpleTypes[] | SimpleTypes;
+  uniqueItems?: boolean;
+}

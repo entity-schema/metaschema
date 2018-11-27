@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/schema/no-number-keywords#",
+  "title": "No Number Keywords",
+  "allOf": [
+    {
+      "$ref": "http://example.com/schema/schema-object#"
+    },
+    {
+      "properties": {
+        "multipleOf": false,
+        "minimum": false,
+        "maximum": false,
+        "exclusiveMinimum": false,
+        "exclusiveMaximum": false
+      }
+    }
+  ]
+}
